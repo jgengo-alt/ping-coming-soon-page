@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+  <main class="container">
+    <section>
+      <img class='logo' src="./images/logo.svg" alt="company logo">
+      <h1 class="mt-50">We are launching <strong>soon!</strong></h1>
+      <h2 class="mt-15">Subscribe and get notified</h2>
+
+      <form action="#" class="mt-50">
+        <input id='email' type="text" placeholder="example@email.com">
+        <p class="error" id="error" style="display: none;">Please provide a valid email address</p>
+        <button id='submit' onclick="send_form()">Notify Me</button>
+
+      </form>
+
+      <img class='illustration mt-100' src="./images/illustration-dashboard.png" alt="illustration-dashboard">
+    </section>
+  </main>
+
+  <footer class="mt-100 mb-100">
+    <div class="social-medias">
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+    <p class="mt-15">&copy; Copyright Ping. All rights reserved.</p>
+  </footer>
+</body>
+
+<script src="./js/main.js"></script>
+
+</html>

@@ -26,7 +26,10 @@
 
       <form action="#" class="mt-50">
         <input id='email' type="text" placeholder="example@email.com">
-        <p class="error" id="error" style="display: none;">Please provide a valid email address</p>
+        <div id="errordiv" style="display: none;">
+          <p class="error" id="error"">Please provide a valid email address</p>
+        </div>
+
         <button id='submit' onclick="send_form()">Notify Me</button>
 
       </form>

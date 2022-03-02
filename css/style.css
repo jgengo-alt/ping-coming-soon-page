@@ -31,6 +31,11 @@ body {
 
 form {
   position: relative;
+  display: flex;
+  gap: 1em;
+
+  align-items: center;
+  flex-direction: row;
 }
 
 main.container {
@@ -67,12 +72,13 @@ section .illustration {
 
 input[type=text] {
   border: none;
-  padding: 1.5em 2em;
+  padding: 1.5em 0;
   border-radius: 30px;
-  width: 400px;
+  width: 450px;
   border: 1px solid var(--clr-2);
   margin-right: 15px;
   font-size: 15px;
+  text-align: center;
 }
 
 input[type=text]::placeholder {
@@ -154,8 +160,11 @@ footer {
 
 @media only screen and (max-width: 900px) {
   form {
-    display: grid;
+    display: flex;
     gap: 1em;
+
+    align-items: center;
+    flex-direction: column;
   }
 
   section h1 {
@@ -167,7 +176,7 @@ footer {
   }
 
   input[type="text"] {
-    width: 60vw;
+    width: 80vw;
     margin-right: 0;
     text-align: center;
   }
@@ -181,5 +190,22 @@ footer {
     text-align: center;
     bottom: 0;
     left: 0;
+  }
+
+  button#submit {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  section h1 {
+    font-size: 20px;
+  }
+  section h2 {
+    font-size: 15px;
+  }
+
+  .errordiv {
+    width: 80vw;
   }
 }
